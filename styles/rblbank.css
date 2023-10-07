@@ -1,0 +1,120 @@
+:root {
+    --background-white: #FFFFFF;
+    --background-black: #000000;
+    --background-white2: #EFEFEF;
+    --background-red: #ED1C24;
+    --background-blue: #1A2764;
+    --background-green: #03A800;
+    --background-white3: #D9D9D9;
+    --background-black-2: #00000033;
+    --background-blue2: #21317D;
+    --background-white4: #EBEBEB;
+    --background-brown: #7B7B7B;
+    --background-peach: #C1C1C1;
+    --background-brown-2: #6D6D6D;
+    --background-peach2: #C8C8C8;
+}
+
+.rbl-root {
+    padding: 0px;
+    margin: 0px;
+    height: 920px;
+    width: 100vw;
+    background: url('../public/rblbank/rbl-bg.png') var(--background-brown-2);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */    background-color: #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.rbl-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+}
+.rbl-right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.rbl-logo { 
+    background-color: var(--background-white);
+    width: 50%;
+    height: 150px;
+}
+.rbl-logo img {
+    width: 80%;
+    height: 90%;
+}
+.rbl-logo-sm { 
+    display: flex;
+    background-color: var(--background-white);
+    width: 50%;
+    align-items: center;
+    height: 98px;
+}
+.rbl-left-logo-container {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+.rbl-logo.rbl-logo-sm img {
+    width: 80%;
+    height: 90%;
+}
+.rbl-left-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.red-button{
+    background-color: var(--background-red);
+    color: var(--background-white);
+    border: none;
+    border-radius: 4px;
+    width: 310px;
+    height: 50px;
+}
+.input-field {
+    width: 310px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid var(--background-white2);
+    background: var(--background-white);
+}
+.input-label {
+    color: #FFF;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 485px) {
+    .rbl-root {
+        background: url('../public/rblbank/rbl-bg-mob.png') var(--background-brown-2);
+        height: 820px;
+    }
+    .rbl-left {
+        width: 100%;
+        flex-direction: column;
+    }
+    .rbl-left-form {
+        margin-top: 20px;
+        /* transform: translateY(-103px); */
+    }
+  }
+  @media only screen and (min-width: 485px) {
+    .rbl-left-logo-container{ display: none;}
+    .rbl-left{
+        justify-content: space-evenly;
+    }
+  }

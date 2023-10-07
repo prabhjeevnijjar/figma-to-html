@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 import '@/styles/globals.css';
+import '@/styles/rblbank.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function App({ Component, pageProps }) {
